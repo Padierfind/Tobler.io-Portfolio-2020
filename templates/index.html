@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104207151-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-104207151-1');
+        </script>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <div id="background" class="full">
+            Portfolio
+        </div>
+        <div id="wrapper" class="wrapper">
+            <div class="container">
+                <div id="left" class="left">
+                    <div class="avatar_wrapper">
+                        <img src="{{ url_for('static', filename='avatar.png') }}" alt="Avatar">
+                        <div class="name subtitle">Patrick Tobler</div>
+                        <div class="title_box">Programmer</div>
+                        <div class="description">Stuttgart, Germany</div>
+                        <a href="https://www.linkedin.com/in/patrick-tobler-6593b912b/" class="fa fa-linkedin"></a>
+                        <a href="https://github.com/Padierfind" class="fa fa-github"></a>
+                        <a href="https://twitter.com/Padierfind" class="fa fa-twitter"></a>
+                    </div>
+                </div>
+                <div id="right" class="right">
+                    <div id="title" class="title">Hello!</div>
+                    <div id="subtitle" class="subtitle">I am Patrick. And this is my website.</div>
+                    I'm a media informatics student living and studying in Stuttgart, Germany.
+                    My main focus is software development, artificial intelligence and virtual reality.
+                    <br><br>
+                    I am very open to new opportunities. Please contact me about jobs, internships, projects.
+                   <div id="button_wrapper" class="button_wrapper">
+                        <a href="{{ url_for('static', filename='cv.pdf') }}"><div class="button blue">Projects / CV</div></a>
+                        <a href="javascript:changeToMail();"><div id="button_black" class="button black">Contact Me!</div></a>
+                   </div> 
+                </div>
+                <div class="footer"><a href="/imprint">Imprint / Impressum</a></div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+
+function changeToMail(){
+    document.getElementById("button_black").innerHTML = "patrick@tobler.de";
+}
+
+</script>
