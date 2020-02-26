@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SC2 Build Reader</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="img/64x64.png">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104207151-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-104207151-1');
+        </script>
+    </head>
+    <body>
+        <section class="hero is-info">
+                <div class="hero-body">
+                    <div class="container">
+                        
+                    <h1 class="title">
+                        <i class="fas fa-assistive-listening-systems"></i> &nbsp;Starcraft 2 Build Reader
+                    </h1>
+                    <h2 class="subtitle">
+                        Listen to your Starcraft builds - while playing!
+                    </h2>
+                    </div>
+                </div>
+        </section>
+        <section class="section">
+            <div class="container box">
+
+            <div class="tile is-ancestor">
+                    <div class="tile is-vertical is-parent">
+                        <div id="main" class="tile is-child ">
+                            <noscript>
+                                <div class="notification is-danger">
+                                    <button class="delete"></button>
+                                    To use the Build Order Reader you need to enable <strong>Javascript!</strong>
+                                </div>
+                            </noscript>
+                            <div class="content">
+                                <h1>Welcome to the SC2 Build Reader</h1>
+                                <p>To get started simply type, paste or upload your build into the textform on the right side. To be able to work properly your build should have the following form (don't sweat the white spaces): </p>
+                                <blockquote>
+                                    14&emsp;0:18&emsp;Pylon<br>
+                                    15&emsp;0:36&emsp;Gateway<br>
+                                    16&emsp;0:46&emsp;Assimilator<br>
+                                    19&emsp;1:20&emsp;Assimilator<br>
+                                    19&emsp;1:26&emsp;Cybernetics Core<br>
+                                    21&emsp;1:40&emsp;Pylon<br>
+                                    22&emsp;2:00&emsp;Stalker & Warp Gate<br>
+                                    25&emsp;2:20&emsp;Pylon<br>
+                                    25&emsp;2:30&emsp;Twilight Council<br>
+                                    25&emsp;2:36&emsp;Stalker<br>
+                                    27&emsp;2:40&emsp;Gateway<br>
+                                    27&emsp;2:50&emsp;Pylon<br>
+                                    27&emsp;2:52&emsp;Gateway<br>
+                                    30&emsp;3:05&emsp;Blink
+                                </blockquote>
+                            </div>
+                            <div class="notification is-info" >
+                                <button id="delete" class="delete"></button>
+                                Do you have trouble finding build orders? Check out <a style="text-decoration: none" href="https://lotv.spawningtool.com/"><strong>Spawningtool.com</strong></a>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <div class="tile is-child">
+
+                            <div class="field">
+                                <div class="file is-medium is-boxed is-info is-fullwidth">
+                                    <label class="file-label">
+                                        <input class="file-input" type="file" id="files" accept=".txt" name="files[]"><output id="list"></output>
+
+                                        <span class="file-cta">
+                                            <span class="file-icon">
+                                                <i class="fas fa-upload"></i>
+                                            </span>
+                                                Upload a .txt file
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="content has-text-centered">
+                                <p>
+                                    or
+                                </p>
+                            </div>
+                            
+                            <div class="field">
+                                <textarea class="textarea" id="message" placeholder="Paste your build here" rows="15"></textarea>
+                            </div>
+
+                            <div class="content has-text-centered ">
+                                <h1 class="has-text-info is-size-1" id="timer">00:00</h1>
+                            </div>
+
+                            <div class="field">
+                                <a id="play" href="#" class="button is-large is-fullwidth is-success">    
+                                    <span class="icon">
+                                        <i class="fas fa-play"></i>
+                                    </span>
+                                    <span>Play</span>
+                                </a>                          
+                            </div>
+                            
+                            <div class="field">
+                                <a id="reset" href="#" class="button is-large is-fullwidth is-info">    
+                                    <span class="icon">
+                                        <i class="fas fa-stop"></i>
+                                    </span>
+                                    <span>Reset</span>
+                                </a>                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        
+            </div>
+        </section>
+    </body>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Starcraft 2 Build Reader </strong> by <a href="https://twitter.com/Padierfind">Patrick Tobler</a><strong> - </strong><a href="/imprint">Imprint & Legal Notice</a><br>
+                Technologies used: JS, HTML, JQuery, <a href="https://bulma.io/">Bulma (CSS Framework)</a>, <a href="http://www.addthis.com/">AddThis</a>, <a href="https://analytics.google.com/analytics/web/">Google Analytics</a>, <a href="https://fontawesome.com/">Font Awesome</a><br>
+                Feel free to contact me via <a href="https://twitter.com/Padierfind">Twitter</a> or send me a mail: <a href="mailto:patrick@tobler.de">patrick@tobler.de</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+
+        $('#files').click('any', handleFileSelect, false);
+
+        function handleFileSelect(evt) {
+            var f = evt.target.files[0]; 
+
+            if (!(f.type === 'text/plain')){
+                $("#main").prepend('<div class="notification is-danger"><button onClick="deleteBox()" id="delete" class="delete"></button class="delete">You may only upload .TXT files!</div>');
+            }
+            else{
+                if (f) {
+                var r = new FileReader();
+                r.onload = function(y) { 
+                    var contents = y.target.result;
+
+                    $("#message").val(contents);
+                }
+                } else { 
+                    $("#main").prepend('<div class="notification is-danger"><button onClick="deleteBox()" id="delete" class="delete"></button class="delete">Upload failed. Try copy pasting it.</div>');
+                }
+                r.readAsText(f);
+            }
+        }
+
+        $('a[href="#"]').click(function(event){
+            event.preventDefault();
+        });
+
+            if ('speechSynthesis' in window) {
+            } else {
+                $("#main").prepend('<div class="notification is-danger"><button onClick="deleteBox()" id="delete" class="delete"></button class="delete">Your browser does not support speech synthesis. Try the latest version of Google Chrome or Mozilla Firefox.</div>');
+            }
+
+
+        $("#delete").click(function(){
+            $("#delete").parent().remove();
+        });
+        
+        function deleteBox(){
+            $("#delete").parent().remove();
+        }
+
+        var timerSeconds = 0;
+
+        $('#reset').click(function(){
+            timerSeconds = -1;
+            $("#timer").text("00:00");
+        })
+
+        var running = false;
+        var interval; 
+        var finalArray = [];
+
+        $('#play').click(function(){
+
+            if(running === false){
+                
+                finalArray = [];
+                running = true;
+                $("#play").addClass("is-danger");
+                $("#play").removeClass("is-success");
+                $("#play").html('<i class="fas fa-pause"></i> &nbsp; Pause');
+
+                var text = $('#message').val();
+                var arr = text.split(/[\s,]+/);
+
+                arr.forEach(myFunction);
+                function myFunction(item, index) {
+                    if(item != " " && item != null && item != "" && item != "\n"){
+                        finalArray.push(item);
+                    }
+                }
+
+                var i;
+                var newArray = [finalArray[0]];
+                loop1:
+                for (i = 1; i < finalArray.length; i++) { // This loops through every snippet in the finalArray
+
+                    var x;
+                    var pushOrNot = true;
+
+                    loop2:
+                    for(x=0; x < finalArray[i].length; x++){ // This loops through every char in the current snippet of the final array 
+                        
+                        var char = finalArray[i].charAt(x);
+                        if(isNaN (char) && char != ':'){
+                            var y;
+                            loop3:
+                            for(y=0; y < newArray[newArray.length -1].length; y++){ // This loops through every char in the last snippet of the newArray
+
+                                var charSecond = newArray[newArray.length -1].charAt(y);
+                                if(isNaN (charSecond) && charSecond != ':'){
+
+                                    var newArrayEntry = newArray[newArray.length -1]+ " " + finalArray[i];
+                                    newArray[newArray.length-1] = newArrayEntry;
+                                    pushOrNot = false;
+                                    break loop2;  
+                                }
+                            }
+                        }
+                    }
+
+                    if(pushOrNot === true){
+                        newArray.push(finalArray[i]);
+                    }
+
+                }
+
+                console.log(newArray);
+                finalArray = newArray;
+                $("#table").remove();
+                $('#main').append('<table id="table" class="table is-striped is-hoverable is-fullwidth"><thead><tr><th>Supply</th><th>Time</th><th>Building/Unit</th></tr></thead><tbody id="tbody"><tr></tr><tr></tr></tbody></table>');
+
+                finalArray.forEach(appendToTable);
+                function appendToTable(item, index){
+
+                    if(index % 3 === 0 || index === 0){
+                            var txt = "<tr id='t" + index + "'><th>" + item + " </th></tr>";
+                            $("tbody").append(txt);
+                        }
+                        else{
+                            var txt = "<td>" + item + " </td>";
+                            var x = index  - (index % 3)
+                            var id = "#t" + x;
+
+                            $(id).append(txt);
+                    }
+
+                }
+
+                console.log(arr);
+                console.log(finalArray);
+                interval = setInterval(Timer, 1000);
+            }
+            else{
+                running = false;
+                $("#play").addClass("is-success");
+                $("#play").removeClass("is-danger");
+                $("#play").html('<i class="fas fa-play"></i> &nbsp; Play');
+                clearInterval(interval);
+            }
+        })
+
+        function Timer(){
+            timerSeconds++;
+
+            var minutes = Math.trunc(timerSeconds / 60);
+            var seconds = Math.trunc(timerSeconds % 60);
+
+            var output = minutes;
+            
+            if(seconds < 10){
+                output = output + ":0" + seconds;
+            }
+            else{
+                output = output + ":" + seconds;
+            }
+
+            finalArray.forEach(myFunction);
+            function myFunction(item, index) {
+                if(item.includes(output)){
+                    var x = index  - (index % 3)
+                    var id = "#t" + x;
+
+                    $(id).css("background-color", "hsl(204, 86%, 53%)");
+                    $(id).css("color", "white");
+                    $(id).css("color", "white");
+
+                    var txtId = index + 1;
+
+                    var txt = finalArray[txtId];
+                    speak(txt);
+
+                }
+            }
+
+            if(minutes < 10){
+                output = "0" + output;
+            }
+
+            $("#timer").text(output);
+
+        }
+
+        function speak(txt){
+            var text = txt
+            var msg = new SpeechSynthesisUtterance();
+            var voices = window.speechSynthesis.getVoices();
+            msg.voice = voices[1];
+            msg.rate = 9 / 10;
+            msg.pitch = 1;
+            msg.text = text;
+
+            msg.onend = function(e) {
+            console.log('Finished in ' + event.elapsedTime + ' seconds.');
+            };
+
+            speechSynthesis.speak(msg);
+        }
+    </script>
+</html>

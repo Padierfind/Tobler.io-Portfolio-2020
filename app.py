@@ -13,6 +13,10 @@ def display_index():
 def display_imprint():
     return render_template('imprint.html')
 
+@app.route('/buildorder')
+def display_buildorder():
+    return render_template('buildorder.html')
+
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5000)
