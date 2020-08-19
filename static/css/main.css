@@ -100,9 +100,20 @@
     color: white;
 }
 
+
+.black a[href^="mailto:"]{
+    color: white;
+    text-decoration: none;
+}
+
 .black:hover{
     background-color: white;
     color: #1f1f1f;
+}
+
+.black:hover a[href^="mailto:"]{
+    color: 1f1f1f;
+    text-decoration: none;
 }
 
 .name{
