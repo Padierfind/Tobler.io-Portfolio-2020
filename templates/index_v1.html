@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104207151-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-104207151-1');
+        </script>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main_new.css') }}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm logo">
+                    <a href="/">
+                        <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.47 162.38"><defs><style>.cls-1{stroke:#000;stroke-miterlimit:10;stroke-width:4px;}</style></defs><path class="cls-1" d="M169.69,49.61c-6.45-16.12-21.06-28.8-43.62-28.8H65.68l0,0H28.5c-.95,0-1.73,1.12-1.73,2.45s.78,2.46,1.73,2.46h97.57c20.2,0,33.09,11.18,38.89,25.79A50.35,50.35,0,0,1,165,87c-5.8,14.61-18.69,25.79-38.89,25.79H96.41a2.44,2.44,0,0,0-2.58,2.36v61.68a2.44,2.44,0,0,0,2.58,2.36,2.38,2.38,0,0,0,2.36-2.36V117.94h27.3c22.56,0,37.17-12.89,43.62-28.79A56.86,56.86,0,0,0,169.69,49.61Z" transform="translate(-24.77 -18.81)"/><path class="cls-1" d="M123.49,82.27h-8.82a2.37,2.37,0,0,0,0,4.73h8.82c8.59,0,14-4.51,16.54-10.53a18.54,18.54,0,0,0,0-14.4c-2.58-6-7.95-10.53-16.54-10.53H96.41a2.44,2.44,0,0,0-2.58,2.36,2.48,2.48,0,0,0,2.58,2.58h27.08c6.23,0,10.31,3.44,12,7.52a14.83,14.83,0,0,1,0,10.54C133.8,79.05,129.5,82.27,123.49,82.27Z" transform="translate(-24.77 -18.81)"/><path class="cls-1" d="M67.6,51.33H29.13a2.38,2.38,0,0,0-2.36,2.36,2.64,2.64,0,0,0,2.36,2.79H65V176.61A2.43,2.43,0,0,0,67.6,179,2.38,2.38,0,0,0,70,176.61V53.69A2.38,2.38,0,0,0,67.6,51.33Z" transform="translate(-24.77 -18.81)"/></svg>              </div>
+                    </a>
+                </div>
+            <div class="row headline">
+                <div class="col-sm">
+                    Hello! My name is Patrick - I'm a student & programmer.
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="section_title">SOCIAL</div>
+                    <ul>
+                        <li>
+                            <a href="mailto:patrick@tobler.de">patrick@tobler.de</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('static', filename='cv.pdf') }}">CV</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Padierfind">Github</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/Padierfind">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/patrick-tobler-6593b912b/">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <div class="section_title">SKILLS & FOCUS</div>
+                    <ul>
+                        <li>Software Development</li>
+                        <li>Python</li>
+                        <li>AR & VR</li>
+                        <li>Unity & C#</li>
+                        <li>AI</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="section_title">PROJECTS</div>
+                    <ul>
+                        <li>
+                            <a href="https://www.kurzegeschichte.de">kurzegeschichte.de</a> & <a href="https://play.google.com/store/apps/details?id=io.tobler.kurzegeschichte">kurzegeschichte App</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('static', filename='Project_Paper_IPFS_MMO_Patrick_Tobler_March_2020.pdf') }}">Research - How to build the Metaverse</a>
+                        </li>
+                        <li>
+                            <a href="https://www.hdm-stuttgart.de/stage/projekt_detail/projekt_details?projekt_ID=2917">AR Airspace App </a>
+                        </li>
+                        <li>
+                            <a href="https://www.amazon.de/Patrick-Tobler-Big-Five-Pers%C3%B6nlichkeitstest/dp/B07DBTYKKB/">Alexa Skill - Personality Test</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('static', filename='documentation_yamarka.pdf') }}">Web Concept - Yamarka </a>
+                        </li>
+                        <li>
+                            <a href="https://mini-social-media.tobler.io/">Mini Social Media </a>
+                        </li>
+                        <li>
+                            <a href="https://padierfind.itch.io/">Game Jam Projects </a>
+                        </li>
+                        <li>
+                            <a href="/buildorder">SC2 Build Order Reader</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <div class="section_title">LINKS</div>
+                    <ul>
+                        <li>
+                            <a href="/imprint">Imprint / Impressum</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+          </div>
+    </body>
+</html>

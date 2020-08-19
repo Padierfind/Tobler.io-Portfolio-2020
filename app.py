@@ -6,12 +6,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def display_index():
-    return render_template('index.html')
+    return render_template('index_v1.html')
 
 
 @app.route('/imprint')
 def display_imprint():
-    return render_template('imprint.html')
+    return render_template('imprint_v1.html')
 
 @app.route('/buildorder')
 def display_buildorder():
