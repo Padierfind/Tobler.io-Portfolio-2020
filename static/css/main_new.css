@@ -1,0 +1,47 @@
+.body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo{
+    height: 50px;
+    margin-top: 112px;
+}
+
+svg{
+    width: auto;
+    height: 100%;
+}
+
+.headline{
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.row{
+    margin-bottom: 112px;
+}
+
+.section_title{
+    font-size: 12px;
+    color: gray;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+a{
+    color: black !important;
+    text-decoration: none !important;
+}
+
+a:hover{
+    color: gray !important;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li{
+    margin-top: 5px;
+}
