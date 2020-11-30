@@ -1,0 +1,21 @@
+{
+    "info": {
+        "url_png_icon_64x64": "https://www.pool-of-babel.com/static/images/pool-of-babel-icon.png",
+        "url_png_logo": "https://www.pool-of-babel.com/static/images/pool-of-babel-logo.png",
+        "location": "Stuttgart, Germany",
+        "social": {
+            "twitter_handle": "BabelPool",
+            "youtube_handle": "channel/UCFU6q7F2rK6VarwK0t8EUEQ"
+        },
+        "about": {
+            "me": "Commited to the decentralization and growth of the Cardano Network. Security and server maintenance lie at the center of our operations. When staking on the Pool of Babel you will be charged the lowest possible fees. Now & in the future.",
+            "server": "Hosted on to Virtual Private Servers in Germany. Each one with 8GB RAM, 160GB SSD and Cores"
+        }
+    },
+    "my-pool-ids": {
+        "0": "326d38a945099c9df79fe95962c335e0e86a05869f8fbf4b51cad18c"
+    },
+    "telegram-admin-handle": {
+        "0": "Padierfind"
+    }
+}
